@@ -1,4 +1,4 @@
-name: Manually Deploy to heroku
+name: Manually Deploy to Heroku(Optional Vars Added)
 
 on: workflow_dispatch
 
@@ -21,5 +21,8 @@ jobs:
           HD_API_HASH: ${{secrets.API_HASH}}
           HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
           HD_ADMIN_CHATS: ${{secrets.ADMIN_CHATS}}
+          HD_DB_URL: ${{secrets.DB_URL}}
+          HD_NYAA_RSS_LINKS: ${{secrets.NYAA_RSS_LINKS}}
+          HD_RSS_RECHECK_INTERVAL: ${{secrets.RSS_RECHECK_INTERVAL}}
 
 
